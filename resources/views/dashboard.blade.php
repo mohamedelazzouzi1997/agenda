@@ -6,6 +6,15 @@
 
 @section('after-styles')
     <link rel="stylesheet" href="{{ asset('css/clientCss.css') }}">
+    <style>
+        .fc-scrollgrid-section.fc-scrollgrid-section-body {
+            display: none;
+        }
+
+        .fc-scrollgrid-section-liquid {
+            display: contents !important;
+        }
+    </style>
 @endsection
 
 @section('content')

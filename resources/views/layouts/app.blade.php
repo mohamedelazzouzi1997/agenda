@@ -70,6 +70,7 @@ $theme = 'theme-green';
     @else
         @include('modals.addNotification')
     @endif
+
     <script src="{{ asset('js/jquery-3.6.3.js') }}"></script>
     <script src="{{ asset('assets/bundles/libscripts.bundle.js') }}"></script>
     <script src="{{ asset('assets/bundles/vendorscripts.bundle.js') }}"></script>

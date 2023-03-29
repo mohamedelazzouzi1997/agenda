@@ -21,19 +21,23 @@
             const calendar = new FullCalendar.Calendar(calendarEl, {
                 locale: 'fr', // change calendare to fr lang
                 initialView: 'timeGridWeek',
+                slotDuration: '00:10:00',
+                slotLabelInterval: '01:00',
+                slotMinTime: '09:00',
+                slotMaxTime: '18:00',
                 businessHours: {
                     // days of week. an array of zero-based day of week integers (0=Sunday)
                     daysOfWeek: [1, 2, 3, 4, 5], // Monday - Thursday
 
                     startTime: '09:00', // a start time (10am in this example)
                     endTime: '18:00', // an end time (6pm in this example)
+
                 },
                 headerToolbar: {
                     left: 'prev,next today',
                     center: 'title',
                     right: 'dayGridYear,dayGridMonth,timeGridWeek,timeGridDay,list'
                 },
-                slotDuration: '01:00:00',
                 dayMaxEvents: 5, // for all non-TimeGrid views
                 buttonText: {
                     today: "Aujourd'hui",

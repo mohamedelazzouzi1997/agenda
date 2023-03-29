@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="{{ asset('css/adminCss.css') }}">
     <link rel="stylesheet" href="{{ asset('css/jqueryConfirm.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/plugins/select2/select2.css') }}" />
+    <style>
+        .fc-scrollgrid-section.fc-scrollgrid-section-body {
+            display: none;
+        }
+
+        .fc-scrollgrid-section-liquid {
+            display: contents !important;
+        }
+    </style>
 @endsection
 
 @section('content')
